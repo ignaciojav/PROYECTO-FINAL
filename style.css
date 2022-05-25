@@ -1,0 +1,357 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+/* ----------------------------------------------------------HEADER------------------------------------------------------------------------------ */
+header{
+    background-color: black;
+}
+
+header h1{
+    color: black ;
+}
+
+.texto-alineado{
+    
+    vertical-align: middle;
+    padding-right: 300px;
+}
+    
+header a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+   
+}
+ header a img{
+     width: 150px;
+}
+  
+
+.menu-header{
+    background-color: #a32129;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.menu-header a{
+    font-size: 30px ;
+    
+}
+
+
+.item-sticky{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
+
+/*------------------------------------------------ANIMACION HEADER-------------------------------------------*/
+
+.titulo1{
+    transition: all 2s ;
+}
+.titulo2{
+    transition: all 2s ;
+}
+.titulo3{
+    transition: all 2s;
+}
+.titulo4{
+    transition: all 2s;
+}
+
+.box2:hover{
+    transform: scale(2);
+}
+
+
+ /*----------------------------------------------------------MAIN------------------------------------------------------------------------------------------------------*/
+main{
+    background-color: white;
+}
+
+ /*estilo tarjeta- ARTICULOS PUBLICADOS------------------------*/
+
+ .tarjeta{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:110px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 2px #d3d3d3d1;
+    border-radius:10px;
+    font-family: sans-serif;
+    
+}
+.titulo{
+    font-size: 15px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+    padding: 10px;
+    
+    
+    }
+
+.cuerpo img{
+    width: 100%;
+}
+
+/*--------------------- ARTICULOS PUBLICADOS-------------------------------------*/
+
+
+.photo-grid-container{
+    
+    display: flex;
+    justify-content: row;
+    margin-right: 100px;
+}
+.photo-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.photo-grid-item{
+    margin-right: 70px;
+}
+
+
+
+
+    
+/*------------------------------------------------*/
+
+/*--------------------------------------- main index FONDO------------------------------*/
+
+.main-index{ 
+    background-image: url(multimedia/imagenes/wallpaper-neon.jpg);
+    padding-top: 100px;
+    margin-bottom: 0%;
+    
+}
+/*-------------------------------- ULTIMOS INGRESOS  AREAS------------------------------------*/
+
+.ultimos-ingresos{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 10px;
+    grid-template-areas:
+    "ultimo-ingreso1 ultimo-ingreso2 ultimo-ingreso3"
+    "ultimo-ingreso4 ultimo-ingreso5 ultimo-ingreso6"
+    "ultimo-ingreso7 ultimo-ingreso8 ultimo-ingreso9";
+}
+
+.ultimos-ingreso1{
+    grid-area: ultimo-ingreso1;
+}
+.ultimos-ingreso2{
+    grid-area: ultimo-ingreso2;
+}
+
+.ultimos-ingreso3{
+    grid-area: ultimo-ingreso3;
+}
+
+.ultimos-ingreso4{
+    grid-area: ultimo-ingreso4;
+}
+.ultimos-ingreso5{
+    grid-area: ultimo-ingreso5;
+}
+.ultimos-ingreso6{
+    grid-area: ultimo-ingreso6;
+}
+.ultimos-ingreso7{
+    grid-area: ultimo-ingreso7;
+}
+.ultimos-ingreso8{
+    grid-area: ultimo-ingreso8;
+}
+.ultimos-ingreso9{
+    grid-area: ultimo-ingreso9;
+}
+/*-----------------------------------------------------------------------------------*/
+
+.ultimos-ingresos img{
+    width: 300px;
+    height: 150px;
+    
+
+} 
+
+
+/*.ultimos-ingresos-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    width:220px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 2px #d3d3d3d1;
+    border-radius:10px;
+    
+}*/
+
+
+
+
+
+/*imagen de productos */
+.product-model img{
+    width: 5%;
+    margin-right: 20px;
+    font-size: 2px;
+}
+main section p{
+    margin-right: 0px;
+}
+/*----------------------------WHATSAPP LOGO ------------------------------------*/
+.item-fixed {
+    position: fixed;
+    bottom:0;
+    right: 0;
+}
+
+.item-fixed img{
+      width: 70px;
+}
+
+
+/*-----------------------ARTICULOS GRID AREAS-----------------------------------------*/
+.container-articulos{
+    display: grid;
+    grid-template-rows: 150px 150px ;
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid black;
+    gap: 10px;
+    grid-template-areas: 
+    "articulo1 articulo2 articulo3 articulo4 articulo5 "
+    "articulo6 articulo7 articulo8 articulo9 articulo10"  ;
+    
+}
+
+.articulo1{
+    grid-area: articulo1;
+    border: 1px solid black;
+}
+.articulo2{
+    grid-area: articulo2;
+    border: 1px solid black;
+}
+
+.articulo3{
+    grid-area: articulo3;
+    border: 1px solid black;
+}
+
+.articulo4{
+    grid-area: articulo4;
+    border: 1px solid black;
+}
+
+.articulo5{
+    grid-area: articulo5;
+    border: 1px solid black;
+}
+
+.articulo6{
+    grid-area: articulo6;
+    
+}
+
+.articulo7{
+    grid-area: articulo7;
+    
+}
+.articulo8{
+    grid-area: articulo8;
+    
+}
+.articulo9{
+    grid-area: articulo9;
+    
+}
+.articulo10{
+    grid-area: articulo10;
+    
+}
+
+.articulo img{
+    width: 1fr;
+    height:100%;
+}
+
+
+
+.container-articulos img{
+    width: 1fr;
+    height:100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------- FOOTER-------------------------------------------------------------------- */
+footer{
+    background-color: grey;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li{
+    color: black;
+}
+ footer nav li img{
+     width: 20px;
+ }
+ footer ul li img{
+     width: 20px;
+ }
+footer nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+footer h2{
+    color: black;
+    margin-bottom: 20px;
+}
+
+/*.redes{
+     
+     list-style: none;
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+ }
+
+ .contactenos{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}*/
+
